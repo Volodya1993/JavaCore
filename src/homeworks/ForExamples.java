@@ -14,8 +14,7 @@ public class ForExamples {
             }
 
         }
-        System.out.println();
-        System.out.println();
+        System.out.println("\n");
         int[] arey = {2, 5, 8, 4, 9, 3, 7};
         int max = arey[0];
         for (int i = 1; i < arey.length; i++) {
