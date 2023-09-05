@@ -28,7 +28,14 @@ public class ArrayUtil {
         System.out.println(min);
         System.out.println("\n");
         //xntir 6
-        System.out.println(numbers[numbers.length / 2]);
+        int y = 0;
+        y = numbers[numbers.length / 2];
+        if (y > 2)
+            System.out.println(y);
+        System.out.println("\n");
+        int a = 2;
+        if (a <= y)
+            System.out.println(" can't print middle values");
         System.out.println("\n");
         //xntir 7
         int k = 0;
