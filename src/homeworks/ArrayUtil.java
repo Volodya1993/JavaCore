@@ -3,8 +3,8 @@ package homeworks;
 public class ArrayUtil {
     public static void main(String[] args) {
         //xntir 1
-        int[] numbers = {1, 6, 3, 9, 15, 52, -3, 5, 8};
-        for (int i = 0; i < 9; i++) {
+        int[] numbers = {1, 6, 3, 9, 15, 52, -3, 5, 8,};
+        for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
         System.out.println("\n");
@@ -32,11 +32,11 @@ public class ArrayUtil {
         y = numbers[numbers.length / 2];
         if (y > 2)
             System.out.println(y);
-        System.out.println("\n");
+        System.out.println();
         int a = 2;
-        if (a <= y)
+        if (a >= y)
             System.out.println(" can't print middle values");
-        System.out.println("\n");
+        System.out.println();
         //xntir 7
         int k = 0;
         for (int i = 0; i < numbers.length; i++) {
