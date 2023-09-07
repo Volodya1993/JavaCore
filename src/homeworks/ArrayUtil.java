@@ -12,7 +12,7 @@ public class ArrayUtil {
         System.out.println(numbers[0]);
         System.out.println("\n");
         //xntir 3
-        System.out.println(numbers.length - 1);
+        System.out.println(numbers[numbers.length - 1]);
         System.out.println("\n");
         //xntir 4
         System.out.println(numbers.length);
@@ -28,19 +28,23 @@ public class ArrayUtil {
         System.out.println(min);
         System.out.println("\n");
         //xntir 6
-        int y = 0;
-        y = numbers[numbers.length / 2];
-        if (y > 2)
-            System.out.println(y);
-        System.out.println();
-        int a = 2;
-        if (a >= y)
-            System.out.println(" can't print middle values");
+        if (numbers.length > 2) {
+            if (numbers.length % 2 ==0){
+                System.out.println(numbers[numbers.length /2 -1]+" "+numbers[numbers.length /2]);
+                }
+            else {
+                System.out.println(numbers[numbers.length/2]);
+            }
+
+        }
+        else {
+            System.out.println("can't print middle values");
+        }
         System.out.println();
         //xntir 7
         int k = 0;
         for (int i = 0; i < numbers.length; i++) {
-            if (i % 2 == 0) {
+            if (numbers[i] % 2 == 0) {
                 k++;
             }
         }
@@ -49,7 +53,7 @@ public class ArrayUtil {
         //xntir 8
         int b = 0;
         for (int i = 0; i < numbers.length; i++) {
-            if (i % 2 == 1) {
+            if (numbers[i] % 2 != 0) {
                 b++;
             }
 
